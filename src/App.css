@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+/* Container styling */
+.registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #dfc7e7;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Form container styling */
+.registration-form {
+  max-width: 400px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgb(228, 136, 239);
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Title styling */
+.form-title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Input field styling */
+.input-field {
+  width: calc(100% - 30px); /* Adjust width to allow space for padding */
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ea7df5;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #e488ef;
+}
+
+/* Error message styling */
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.submit-button {
+  width: calc(100% - 30px); /* Adjust width to allow space for padding */
+  padding: 15px;
+  margin-top: 10px; /* Add margin to separate from input fields */
+  background-color: #e0b9ef;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #ea7df5;
+}
+
+/* Loading message styling */
+.loading-message {
+  color: #007bff;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Success message styling */
+.success-message {
+  color: #28a745;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
 }
